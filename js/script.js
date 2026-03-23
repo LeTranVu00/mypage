@@ -53,11 +53,13 @@ btn.addEventListener("click", function () {
 });
 
 function moveButton() {
-    let maxX = window.innerWidth - btn.offsetWidth;
-    let maxY = window.innerHeight - btn.offsetHeight;
+    const buffer = 20;
 
-    let randomX = Math.random() * maxX;
-    let randomY = Math.random() * maxY;
+    let maxX = document.documentElement.clientWidth - btn.offsetWidth - buffer;
+    let maxY = document.documentElement.clientHeight - btn.offsetHeight - buffer;
+
+    let randomX = buffer + Math.random() * maxX;
+    let randomY = buffer + Math.random() * maxY;
 
     btn.style.left = randomX + "px";
     btn.style.top = randomY + "px";
