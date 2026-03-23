@@ -11,22 +11,27 @@ body {
 
 #btn {
     position: absolute;
-    padding: 10px 20px;
+    padding: 12px 24px;
     cursor: pointer;
-    background: #ff4081;
+    background: linear-gradient(45deg, #ff4081, #ff80ab);
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* bo tròn hơn */
     color: white;
     font-size: 16px;
-    transition: transform 0.1s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    touch-action: manipulation;
 }
 
-#btn:hover {
-    transform: scale(1.1);
+#btn:hover, #btn:active {
+    transform: scale(1.15);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.5);
 }
 
 #message {
     margin-top: 20px;
     font-size: 20px;
     color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc;
 }

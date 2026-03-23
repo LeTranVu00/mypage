@@ -7,7 +7,13 @@ let maxClick = 1000;
 let lastClickTime = 0;
 let hovered = false;
 
-btn.addEventListener("mouseover", function () {
+// Desktop: hover chuột
+btn.addEventListener("pointerenter", function () {
+    hovered = true;
+});
+
+// Mobile: chạm
+btn.addEventListener("touchstart", function () {
     hovered = true;
 });
 
