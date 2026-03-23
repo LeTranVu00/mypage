@@ -38,7 +38,7 @@ btn.addEventListener("click", function () {
     count++;
 
     if (count >= maxClick) {
-        message.innerText = "Chúc mừng bạn đã khám phá hết bí mật 😈";
+        message.innerText = "Chúc mừng bạn đã khám phá hết bí mật 😈, bí mật chính là khả năng kiên trì và chịu đựng của bạn, nó đã đánh thức con người tiềm ẩn bên trong bạn, chúc bạn 1 ngày vui :D";
         btn.style.display = "none";
     } else {
         if (count === 30) {
