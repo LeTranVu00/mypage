@@ -17,7 +17,7 @@ btn.addEventListener("click", function () {
     lastClickTime = now;
 
     if (!hovered) {
-        message.innerText = "Ê 😏 phải đưa chuột vào nút đã!";
+        message.innerText = "Ê 😏 phải nhấn vào nút đã!";
         return;
     }
 
