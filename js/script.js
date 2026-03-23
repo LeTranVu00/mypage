@@ -4,7 +4,6 @@ let message = document.getElementById("message");
 let count = 0;
 let maxClick = 1000;
 
-// Anti auto-click
 let lastClickTime = 0;
 let hovered = false;
 
@@ -17,16 +16,13 @@ btn.addEventListener("click", function () {
     let diff = now - lastClickTime;
     lastClickTime = now;
 
-    // ❌ Chưa hover mà click
     if (!hovered) {
         message.innerText = "Ê 😏 phải đưa chuột vào nút đã!";
         return;
     }
 
-    // reset hover
     hovered = false;
 
-    // ❌ Click quá nhanh (auto click)
     let randomDelay = Math.random() * 150;
     if (diff < 120 + randomDelay) {
         message.innerText = "Click nhanh quá 😡 dùng tool hả?";
@@ -35,7 +31,6 @@ btn.addEventListener("click", function () {
 
     count++;
 
-    // 🎯 Logic chính
     if (count >= maxClick) {
         message.innerText = "Chúc mừng bạn đã khám phá hết bí mật 😈";
         btn.style.display = "none";
