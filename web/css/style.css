@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+#btn {
+    position: absolute;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #00ffcc;
+}
