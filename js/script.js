@@ -5,6 +5,34 @@ let _0xmsg=document[_0x5a[0]](_0x5a[2]);
 
 let _0xc=0,_0xm=1000,_0xl=0,_0xh=false;
 
+// 😈 Anti-debug (spam debugger)
+setInterval(function(){
+    debugger;
+},200);
+
+// 😈 Detect DevTools + phá UI
+setInterval(function(){
+    if(window.outerWidth - window.innerWidth > 120){
+        document.body.innerHTML="💀 Đừng soi code nữa 😡";
+    }
+},500);
+
+// 😈 Fake lag (ngốn CPU nhẹ)
+setInterval(function(){
+    let _0xf=0;
+    for(let i=0;i<50000;i++){
+        _0xf+=Math.sqrt(i*Math.random());
+    }
+},300);
+
+// 😈 Random freeze
+setInterval(function(){
+    if(Math.random() < 0.1){
+        let t = Date.now();
+        while(Date.now() - t < 100){}
+    }
+},400);
+
 _0xbtn[_0x5a[4]](_0x5a[3],function(){_0xh=true});
 
 _0xbtn[_0x5a[4]](_0x5a[5],function(){
@@ -40,6 +68,7 @@ _0xbtn[_0x5a[4]](_0x5a[5],function(){
         }else{
             _0xmsg[_0x5a[6]]="Nhanh lênnn 😈";
         }
+
         (function(){
             let _0xmx=window[_0x5a[13]]-_0xbtn[_0x5a[15]];
             let _0xmy=window[_0x5a[14]]-_0xbtn[_0x5a[16]];
