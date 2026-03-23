@@ -43,18 +43,30 @@ btn.addEventListener("click", function () {
     } else {
         if (count === 30) {
             message.innerText = "Cố lên mọi bí mật sắp được phơi bày 😈";
+        }
+        else if (count === 35) {
+            message.innerText = "Cố lên, cố lên anh em cố lên 😈";
+        }
+        else if (count === 40) {
+            message.innerText = "Cố lên, đừng nản 😈"; 
+        }
+        else if (count === 45) {
+            message.innerText = "Ráng 1 tý nữa thoi mà hẹ hẹ 😈";
         } 
         else if (count === 50) {
             message.innerText = "Cố lên sắp tới rồi đó 😈";
         }
-        else if (count === 60) {
-            message.innerText = "gần đến đích rồi 😈"; 
+        else if (count === 55) {
+            message.innerText = "Sắp tới rồi đó, 1 chút nữa thôi 😈";
         }
-        else if (count === 40) {
-            message.innerText = "cố lên 😈"; 
+        else if (count === 60) {
+            message.innerText = "Gần đến đích rồi 😈"; 
+        }
+        else if (count === 65) {
+            message.innerText = "Cố lên, đừng nản 😈"; 
         } 
         else if (count < 30) {
-            message.innerText = "khi nhấn đủ 30 lần thì bí mật sẽ được tiết lộ 😈";
+            message.innerText = "Khi nhấn đủ 30 lần thì bí mật sẽ được tiết lộ 😈";
         }
         else {
             message.innerText = "Nhanh lênnn 😈";
