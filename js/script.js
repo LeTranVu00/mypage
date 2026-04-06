@@ -2,7 +2,7 @@ let btn = document.getElementById("btn");
 let message = document.getElementById("message");
 
 let count = 0;
-let maxClick = 70;
+let maxClick = Infinity;
 
 let lastClickTime = 0;
 let hovered = false;
